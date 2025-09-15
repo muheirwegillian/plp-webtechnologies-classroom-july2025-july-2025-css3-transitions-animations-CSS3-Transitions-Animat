@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawfect Pals 🐾</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🐾 Welcome to Pawfect Pals 🐶</h1>
+    <p>Your friendly dog website with fun animations & interactivity!</p>
+  </header>
+
+  <!-- Part 1: CSS Hover Animation -->
+  <section class="dogs">
+    <h2>Adopt a Friend</h2>
+    <button class="animated-btn">See Our Dogs</button>
+  </section>
+
+  <!-- Part 2: JS Functions -->
+  <section class="dog-calculator">
+    <h2>🐕 Dog Age Calculator</h2>
+    <input type="number" id="dogYears" placeholder="Enter your dog's age in years">
+    <button onclick="showDogAge()">Calculate in Human Years</button>
+    <p id="dogResult"></p>
+  </section>
+
+  <!-- Part 3: JS + CSS Integration -->
+  <section class="fun-box">
+    <h2>🎾 Play with the Puppy!</h2>
+    <div class="box" id="puppyBox">🐕</div>
+    <button onclick="toggleAnimation()">Make the Puppy Jump</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Pawfect Pals | Made with ❤️ for all dog lovers</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

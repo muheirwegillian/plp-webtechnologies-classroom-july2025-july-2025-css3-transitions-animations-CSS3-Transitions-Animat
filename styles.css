@@ -1,0 +1,68 @@
+/* General Styling */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  margin: 40px;
+  background: #fff8f0;
+  color: #333;
+}
+
+header {
+  background: #ffda77;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* --- Part 1: CSS Transitions & Animations --- */
+
+/* Button Hover Effect */
+.animated-btn {
+  background: #ff914d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.animated-btn:hover {
+  background: #d75a2c;
+  transform: scale(1.1);
+}
+
+/* Continuous Animation with @keyframes */
+@keyframes jump {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+/* Box styling */
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  background: #ff914d;
+  line-height: 100px;
+  font-size: 50px;
+  color: white;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+/* Class added by JS to trigger animation */
+.box.animate {
+  animation: jump 1s infinite;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 14px;
+  color: #666;
+}
